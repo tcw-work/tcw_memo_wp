@@ -1,0 +1,61 @@
+@import "common/functional_parts/variable.scss";
+html {
+    font-size: 62.5%;
+    color: $c_base;
+}
+.is_pc {
+    display: block;
+}
+.is_sp {
+    display: none;
+}
+
+.top {
+    .main_content {
+        max-width: 862px;
+        width: 100%;
+        margin-right: 32px;
+        h2 {
+            margin-bottom: 40px;
+            font-size: 2.8rem;
+            line-height: 1;
+            font-weight: bold;
+            display: inline-block;
+            background: transparent linear-gradient(90deg, #048e67 0%, #343434 19%) 0% 0% no-repeat padding-box;
+            color: transparent;
+            -webkit-background-clip: text;
+            width: 100%;
+            &::after {
+                content: "";
+                display: block;
+                max-width: 862px;
+                width: 100%;
+                height: 2px;
+                margin-top: 8px;
+                background-color: $c_base;
+            }
+        }
+    }
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .is_pc {
+        display: none;
+    }
+    .is_sp {
+        display: block;
+    }
+    main {
+        display: block;
+    }
+}
