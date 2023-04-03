@@ -39,7 +39,8 @@ aside {
             }
             li {
                 line-height: 1.6;
-                margin-bottom: 7px;
+                margin-bottom: 12px;
+                font-size: 1.4rem;
             }
         }
     }
@@ -47,20 +48,37 @@ aside {
         background-color: $c_main;
         color: $c_base;
         .box_ttl {
+            padding: 0px;
             cursor: auto;
-            span {
-                width: auto;
-                height: auto;
-                border-style: none;
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
             }
-            input {
-                width: 80%;
-                outline: 0;
-                border: none;
-                :focus {
+            label {
+                width: 100%;
+                input {
+                    padding: 12px;
+                    width: 100%;
                     outline: 0;
                     border: none;
+                    :focus {
+                        outline: 0;
+                        border: none;
+                    }
                 }
+            }
+            .search-submit {
+                margin: 0px;
+                padding: 11px;
+                cursor: pointer;
+                color: $c_main;
+                background-color: $c_base;
+                width: 17px;
+                height: auto;
+                border-style: none;
+                position: relative;
             }
         }
     }

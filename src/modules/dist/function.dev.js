@@ -39,7 +39,8 @@ $('.category .box_trriger').click(function () {
 $('.tag .box_trriger').click(function () {
   $('.tag .box_cont').slideToggle(500);
   $('.tag .box_trriger span').toggleClass('triangle_act');
-});
+}); // SPのナビゲーション
+
 $(".sp_nav_torigger").click(function () {
   if ($(".sp_nav_torigger").hasClass("sp_nav_torigger_active")) {
     $(".sp_nav_torigger").removeClass("sp_nav_torigger_active");
@@ -52,4 +53,23 @@ $(".sp_nav_torigger").click(function () {
     $(".h_nav").toggleClass("ac");
     $(".h_nav").slideToggle(400); // $(".header-wrap").css("position", "fixed");
   }
-});
+}); // スムーススクロール
+
+$(function () {
+  $('a[href^="#"]').click(function () {
+    var adjust = 0;
+    var speed = 400;
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top + adjust;
+    $('body,html').animate({
+      scrollTop: position
+    }, speed, 'swing');
+    return false;
+  });
+}); // 検索窓のinputを画像に変更
+
+$(".search-submit").attr("value", "");
+$(".search-submit").attr("type", "image");
+$(".search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search.png");
+$("header .search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search_black.jpg");

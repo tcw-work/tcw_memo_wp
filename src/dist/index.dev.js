@@ -26,9 +26,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 (0, _module["default"])();
 (0, _module_next["default"])();
-(0, _function["default"])(); // import codepen from 'https://cpwebassets.codepen.io/assets/embed/ei.js';
-// codepen();
-// const hello = () => {
+(0, _function["default"])(); // const hello = () => {
 //     console.log("hello");
 // };
 // hello();

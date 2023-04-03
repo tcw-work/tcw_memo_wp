@@ -14,6 +14,7 @@ body {
             li {
                 font-size: 1.6rem;
                 cursor: pointer;
+                margin-left: 40px;
                 a {
                     color: $c_main;
                     text-decoration: none;
@@ -23,9 +24,6 @@ body {
                         text-decoration: none;
                         color: $c_accent;
                     }
-                }
-                &:not(:first-child) {
-                    margin-left: 40px;
                 }
             }
             li.nav_window {
@@ -39,12 +37,10 @@ body {
             justify-content: space-between;
             align-items: center;
         }
-        h1 {
+        .h_ttl {
             margin-right: 24px;
             display: block;
-            a {
-                text-decoration: none;
-            }
+            text-decoration: none;
             span {
                 color: $c_main;
                 display: block;
@@ -72,28 +68,51 @@ body {
                 justify-content: flex-end;
             }
             .h_nav_window_act {
-                max-width: 306px;
+                padding-top: 0;
                 width: 100%;
-                padding: 12px;
                 margin-left: auto;
                 margin-right: 0;
                 box-sizing: border-box;
-                background-color: $c_main;
                 color: $c_base;
-                justify-content: space-between;
-                input {
-                    width: 80%;
-                    outline: 0;
-                    border: none;
-                    font-size: 1.2rem;
-                    font-weight: normal;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
+                justify-content: flex-end;
             }
             ul {
                 display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .h_nav_window {
+            form {
+                display: flex;
+                width: 100%;
+                max-width: 306px;
+                margin-top: 12px;
+                background-color: $c_main;
+            }
+            label {
+                width: 100%;
+                outline: 0;
+                border: none;
+                :focus {
+                    outline: 0;
+                    border: none;
+                }
+            }
+            input {
+                padding: 12px;
+                width: 100%;
+                outline: 0;
+                border: none;
+                font-size: 1.2rem;
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            input.search-submit {
+                padding: 10px 12px;
+                width: 17px;
+                height: auto;
             }
         }
     }
@@ -102,7 +121,7 @@ body {
 @media screen and (max-width: 768px) {
     body {
         header {
-            h1 {
+            .head_wrapping {
                 position: relative;
                 margin-right: 0;
                 .sp_nav_torigger {
@@ -152,9 +171,7 @@ body {
                     padding-bottom: 12px;
                     margin-bottom: 12px;
                     border-bottom: 1px solid $c_accent;
-                    &:not(:first-child) {
-                        margin-left: 0px;
-                    }
+                    margin-left: 0px;
                     &:last-child {
                         border: none;
                         padding-bottom: 0;
@@ -165,12 +182,15 @@ body {
                         justify-content: space-between;
                         margin-left: 0;
                         margin-right: auto;
-                        max-width: 306px;
+                        max-width: 765px;
                         width: 100%;
-                        padding: 12px;
                         box-sizing: border-box;
                         background-color: #ffffff;
                         color: #343434;
+                        form {
+                            max-width: 765px;
+                            margin-top: 0px;
+                        }
                         input {
                             border: none;
                         }

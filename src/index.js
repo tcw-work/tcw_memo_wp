@@ -15,10 +15,6 @@ foo_next();
 
 import function_parts from './modules/function.js';
 function_parts();
-
-// import codepen from 'https://cpwebassets.codepen.io/assets/embed/ei.js';
-// codepen();
-
 // const hello = () => {
 //     console.log("hello");
 // };

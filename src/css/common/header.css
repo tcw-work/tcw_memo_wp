@@ -12,6 +12,7 @@ body header nav {
 body header nav li {
   font-size: 1.6rem;
   cursor: pointer;
+  margin-left: 40px;
 }
 body header nav li a {
   color: #ffffff;
@@ -22,9 +23,6 @@ body header nav li a:hover {
   text-decoration: none;
   color: #048e67;
 }
-body header nav li:not(:first-child) {
-  margin-left: 40px;
-}
 body header nav li.nav_window img {
   width: 17px;
 }
@@ -33,14 +31,12 @@ body header .nav_in {
   justify-content: space-between;
   align-items: center;
 }
-body header h1 {
+body header .h_ttl {
   margin-right: 24px;
   display: block;
-}
-body header h1 a {
   text-decoration: none;
 }
-body header h1 span {
+body header .h_ttl span {
   color: #ffffff;
   display: block;
   margin-top: 12px;
@@ -63,18 +59,37 @@ body header .h_nav_inside .h_nav_window_act {
   justify-content: flex-end;
 }
 body header .h_nav_inside .h_nav_window_act {
-  max-width: 306px;
+  padding-top: 0;
   width: 100%;
-  padding: 12px;
   margin-left: auto;
   margin-right: 0;
   box-sizing: border-box;
-  background-color: #ffffff;
   color: #343434;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-body header .h_nav_inside .h_nav_window_act input {
-  width: 80%;
+body header .h_nav_inside ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+body header .h_nav_window form {
+  display: flex;
+  width: 100%;
+  max-width: 306px;
+  margin-top: 12px;
+  background-color: #ffffff;
+}
+body header .h_nav_window label {
+  width: 100%;
+  outline: 0;
+  border: none;
+}
+body header .h_nav_window label :focus {
+  outline: 0;
+  border: none;
+}
+body header .h_nav_window input {
+  padding: 12px;
+  width: 100%;
   outline: 0;
   border: none;
   font-size: 1.2rem;
@@ -83,35 +98,37 @@ body header .h_nav_inside .h_nav_window_act input {
   align-items: center;
   justify-content: space-between;
 }
-body header .h_nav_inside ul {
-  display: flex;
+body header .h_nav_window input.search-submit {
+  padding: 10px 12px;
+  width: 17px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
-  body header h1 {
+  body header .head_wrapping {
     position: relative;
     margin-right: 0;
   }
-  body header h1 .sp_nav_torigger {
+  body header .head_wrapping .sp_nav_torigger {
     width: 30px;
     right: 0;
     top: 20%;
     position: absolute;
   }
-  body header h1 .sp_nav_torigger ul li {
+  body header .head_wrapping .sp_nav_torigger ul li {
     border-bottom: 2px solid #048e67;
     margin-bottom: 7px;
     transition: all 0.4s;
     padding-bottom: 0px;
     transition: all 0.4s;
   }
-  body header h1 .sp_nav_torigger_active ul li {
+  body header .head_wrapping .sp_nav_torigger_active ul li {
     transform: translateY(7px) rotate(-45deg);
   }
-  body header h1 .sp_nav_torigger_active ul li:nth-of-type(2) {
+  body header .head_wrapping .sp_nav_torigger_active ul li:nth-of-type(2) {
     opacity: 0;
   }
-  body header h1 .sp_nav_torigger_active ul li:nth-of-type(3) {
+  body header .head_wrapping .sp_nav_torigger_active ul li:nth-of-type(3) {
     transform: translateY(-10px) rotate(225deg);
   }
   body header .nav_in {
@@ -131,8 +148,6 @@ body header .h_nav_inside ul {
     padding-bottom: 12px;
     margin-bottom: 12px;
     border-bottom: 1px solid #048e67;
-  }
-  body header nav li:not(:first-child) {
     margin-left: 0px;
   }
   body header nav li:last-child {
@@ -145,12 +160,15 @@ body header .h_nav_inside ul {
     justify-content: space-between;
     margin-left: 0;
     margin-right: auto;
-    max-width: 306px;
+    max-width: 765px;
     width: 100%;
-    padding: 12px;
     box-sizing: border-box;
     background-color: #ffffff;
     color: #343434;
+  }
+  body header nav li .h_nav_window form {
+    max-width: 765px;
+    margin-top: 0px;
   }
   body header nav li .h_nav_window input {
     border: none;

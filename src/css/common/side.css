@@ -40,28 +40,46 @@ aside section .box_cont img {
 }
 aside section .box_cont li {
   line-height: 1.6;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
 }
 aside section.window {
   background-color: #ffffff;
   color: #343434;
 }
 aside section.window .box_ttl {
+  padding: 0px;
   cursor: auto;
 }
-aside section.window .box_ttl span {
-  width: auto;
+aside section.window .box_ttl form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+aside section.window .box_ttl label {
+  width: 100%;
+}
+aside section.window .box_ttl label input {
+  padding: 12px;
+  width: 100%;
+  outline: 0;
+  border: none;
+}
+aside section.window .box_ttl label input :focus {
+  outline: 0;
+  border: none;
+}
+aside section.window .box_ttl .search-submit {
+  margin: 0px;
+  padding: 11px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #343434;
+  width: 17px;
   height: auto;
   border-style: none;
-}
-aside section.window .box_ttl input {
-  width: 80%;
-  outline: 0;
-  border: none;
-}
-aside section.window .box_ttl input :focus {
-  outline: 0;
-  border: none;
+  position: relative;
 }
 aside section.category .box_cont,
 aside .tag .box_cont {

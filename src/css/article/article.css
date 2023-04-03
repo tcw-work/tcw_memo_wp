@@ -14,6 +14,7 @@ body.article main .main_content.m_c_article .article_heading_in .article_img {
 }
 body.article main .main_content.m_c_article .article_heading_in .article_img img {
   width: 70px;
+  height: 69px;
 }
 body.article main .main_content.m_c_article .article_heading_in .article_inf .article_ttl {
   font-size: 3.2rem;
@@ -53,47 +54,74 @@ body.article main .main_content.m_c_article .article_detail a:hover {
   color: #048e67;
 }
 body.article main .main_content.m_c_article .article_content {
-  padding: 40px 24px;
+  padding: 40px 24px 16px 24px;
   margin-top: 40px;
   box-shadow: 0px 0px 14px -9px #777777;
   border-radius: 10px;
+  margin-top: 56px;
 }
 body.article main .main_content.m_c_article .article_content p,
 body.article main .main_content.m_c_article .article_content img {
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
-body.article main .main_content.m_c_article .article_content section.article_block {
-  margin-top: 56px;
-}
-body.article main .main_content.m_c_article .article_content section.article_block p {
+body.article main .main_content.m_c_article .article_content p {
   font-size: 1.6rem;
   line-height: 1.6;
 }
-body.article main .main_content.m_c_article .article_content section.article_block h2 {
+body.article main .main_content.m_c_article .article_content h2 {
   margin-bottom: 0;
   font-size: 2.4rem;
   font-weight: bold;
+  margin-top: -32px;
+  padding-top: 56px;
+  margin-bottom: 24px;
 }
-body.article main .main_content.m_c_article .article_content section.article_block h3,
-body.article main .main_content.m_c_article .article_content section.article_block h4,
-body.article main .main_content.m_c_article .article_content section.article_block h5,
-body.article main .main_content.m_c_article .article_content section.article_block h6 {
-  margin-top: 48px;
+body.article main .main_content.m_c_article .article_content h3,
+body.article main .main_content.m_c_article .article_content h4,
+body.article main .main_content.m_c_article .article_content h5,
+body.article main .main_content.m_c_article .article_content h6 {
+  margin-top: -24px;
+  padding-top: 48px;
   font-size: 2rem;
+  margin-bottom: 24px;
   font-weight: bold;
 }
-body.article main .main_content.m_c_article .article_content section.article_block img {
+body.article main .main_content.m_c_article .article_content img {
   width: 100%;
 }
-body.article main .main_content.m_c_article .article_content section.article_block_intro {
+body.article main .main_content.m_c_article .article_content p:first-child {
   margin-top: 0px;
-  padding: 0;
 }
-body.article main .main_content.m_c_article .article_content section.article_block_intro::first-letter {
-  font-size: 3.2rem;
+body.article main .main_content.m_c_article .article_content .cp_embed_wrapper {
+  margin-bottom: 24px;
 }
-body.article main .main_content.m_c_article .article_content section.article_block_intro p:first-child {
-  margin-top: 0px;
+body.article main .main_content.m_c_article .article_content .table_of_contents {
+  border: 2px solid #343434;
+  width: 100%;
+  margin: 48px auto 32px;
+  box-sizing: border-box;
+  max-width: 480px;
+}
+body.article main .main_content.m_c_article .article_content .table_of_contents .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  background-color: #343434;
+  color: #ffffff;
+}
+body.article main .main_content.m_c_article .article_content .table_of_contents ul {
+  list-style: none;
+  padding: 0px 24px 24px 24px;
+}
+body.article main .main_content.m_c_article .article_content .table_of_contents li {
+  font-size: 1.6rem;
+}
+body.article main .main_content.m_c_article .article_content .table_of_contents li:not(:last-child) {
+  margin-bottom: 16px;
+}
+body.article main .main_content.m_c_article .article_content .table_of_contents a {
+  color: #343434;
 }
 body.article main .main_content.m_c_article .related_block {
   margin-top: 80px;

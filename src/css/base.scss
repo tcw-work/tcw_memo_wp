@@ -2,6 +2,12 @@
 html {
     font-size: 62.5%;
     color: $c_base;
+    margin-top: 0px !important;
+}
+@media screen and (max-width: 782px) {
+    html {
+        margin-top: 0px !important;
+    }
 }
 .is_pc {
     display: block;
