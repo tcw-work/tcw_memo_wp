@@ -109,6 +109,19 @@ body.article {
                         margin-top: 0px;
                     }
                 }
+                ul {
+                    background-color: rgb(52, 52, 52, 0.1);
+                    padding: 24px;
+                    margin-bottom: 24px;
+                    li {
+                        font-size: 1.6rem;
+                        line-height: 1.6;
+                        word-break: break-all;
+                        &:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
                 .cp_embed_wrapper {
                     margin-bottom: 24px;
                 }
@@ -129,6 +142,8 @@ body.article {
                     ul {
                         list-style: none;
                         padding: 0px 24px 24px 24px;
+                        margin-bottom: 0px;
+                        background-color: $c_main;
                     }
                     li {
                         font-size: 1.6rem;
@@ -239,7 +254,8 @@ body.article {
                         width: 294px;
                     }
                     .article_scroll {
-                        height: 259px;
+                        height: auto;
+                        padding-bottom: 8px;
                         .small_card {
                             height: auto;
                             .small_card_left {
@@ -250,6 +266,10 @@ body.article {
                         }
                     }
                     .article_scroll_in {
+                        display: flex;
+                        overflow: initial;
+                        position: inherit;
+                        width: 950px;
                         .card_02 {
                             &:not(:first-child) {
                                 margin-left: 18px;

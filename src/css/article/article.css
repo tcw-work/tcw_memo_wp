@@ -92,6 +92,19 @@ body.article main .main_content.m_c_article .article_content img {
 body.article main .main_content.m_c_article .article_content p:first-child {
   margin-top: 0px;
 }
+body.article main .main_content.m_c_article .article_content ul {
+  background-color: rgba(52, 52, 52, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+body.article main .main_content.m_c_article .article_content ul li {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  word-break: break-all;
+}
+body.article main .main_content.m_c_article .article_content ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
 body.article main .main_content.m_c_article .article_content .cp_embed_wrapper {
   margin-bottom: 24px;
 }
@@ -113,6 +126,8 @@ body.article main .main_content.m_c_article .article_content .table_of_contents 
 body.article main .main_content.m_c_article .article_content .table_of_contents ul {
   list-style: none;
   padding: 0px 24px 24px 24px;
+  margin-bottom: 0px;
+  background-color: #ffffff;
 }
 body.article main .main_content.m_c_article .article_content .table_of_contents li {
   font-size: 1.6rem;
@@ -208,13 +223,20 @@ body.article section.card_01 .large_card ul {
     width: 294px;
   }
   body.article main .main_content.m_c_article .related_block .article_scroll {
-    height: 259px;
+    height: auto;
+    padding-bottom: 8px;
   }
   body.article main .main_content.m_c_article .related_block .article_scroll .small_card {
     height: auto;
   }
   body.article main .main_content.m_c_article .related_block .article_scroll .small_card .small_card_left img {
     width: 67px;
+  }
+  body.article main .main_content.m_c_article .related_block .article_scroll_in {
+    display: flex;
+    overflow: initial;
+    position: inherit;
+    width: 950px;
   }
   body.article main .main_content.m_c_article .related_block .article_scroll_in .card_02:not(:first-child) {
     margin-left: 18px;

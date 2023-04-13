@@ -41,6 +41,44 @@ html {
                 background-color: $c_base;
             }
         }
+        .pagination {
+            h2 {
+                width: auto;
+            }
+            .nav-links {
+                display: flex;
+            }
+            a {
+                &:not(:last-child) {
+                    margin-right: 12px;
+                }
+            }
+            span,
+            a {
+                width: 24px;
+                height: 24px;
+                font-size: 1.4rem;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+            span {
+                margin-right: 12px;
+                background-color: $c_base;
+                color: $c_main;
+            }
+            a {
+                background-color: $c_main;
+                color: $c_base;
+                border: 1px solid $c_base;
+            }
+            .next,
+            .prev {
+                display: none;
+            }
+        }
     }
 }
 
@@ -63,5 +101,15 @@ main {
     }
     main {
         display: block;
+        max-width: 768px;
+    }
+    .top {
+        .main_content {
+            max-width: 768px;
+            margin-right: 0;
+            .pagination {
+                width: auto;
+            }
+        }
     }
 }

@@ -51,6 +51,7 @@ body {
         .h_nav {
             ul {
                 display: flex;
+                flex-wrap: wrap;
             }
         }
         .h_nav_inside {

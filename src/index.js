@@ -13,8 +13,14 @@ foo();
 import foo_next from './modules/module_next.js';
 foo_next();
 
+import table_parts from './modules/table_of_content.js';
+table_parts();
+
 import function_parts from './modules/function.js';
 function_parts();
+
+
+
 // const hello = () => {
 //     console.log("hello");
 // };

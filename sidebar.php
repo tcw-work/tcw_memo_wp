@@ -74,13 +74,16 @@
         <div class="box_cont"><img src="src/img/common/contact.jpg" alt=""></div>
     </section>
 
+
+
     <?php if ( is_single() or is_page() ) { // シングルページの場合 ?>
+
     <section class="heading">
         <div class="box_ttl box_common">
             <p>目次</p>
         </div>
         <div class="box_cont">
-            <ul>
+            <!-- <ul>
                 <li class="s_h2">H2 タイトル</li>
                 <li class="s_h3">H3 タイトル</li>
                 <li class="s_h4">H4 タイトル</li>
@@ -93,7 +96,10 @@
                 <li class="s_h4">H4 タイトル</li>
                 <li class="s_h5">H5 タイトル</li>
                 <li class="s_h4">H4 タイトル</li>
-            </ul>
+            </ul> -->
+            <!--ここにサイドバー用目次を代入-->
+            <ul class="mokuji"></ul>
+            <!--ここにサイドバー用目次を代入-->
         </div>
     </section>
 </aside>

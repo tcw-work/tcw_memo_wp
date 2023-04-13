@@ -42,6 +42,40 @@ html {
   margin-top: 8px;
   background-color: #343434;
 }
+.top .main_content .pagination h2 {
+  width: auto;
+}
+.top .main_content .pagination .nav-links {
+  display: flex;
+}
+.top .main_content .pagination a:not(:last-child) {
+  margin-right: 12px;
+}
+.top .main_content .pagination span,
+.top .main_content .pagination a {
+  width: 24px;
+  height: 24px;
+  font-size: 1.4rem;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.top .main_content .pagination span {
+  margin-right: 12px;
+  background-color: #343434;
+  color: #ffffff;
+}
+.top .main_content .pagination a {
+  background-color: #ffffff;
+  color: #343434;
+  border: 1px solid #343434;
+}
+.top .main_content .pagination .next,
+.top .main_content .pagination .prev {
+  display: none;
+}
 
 main {
   max-width: 1200px;
@@ -62,5 +96,13 @@ main {
   }
   main {
     display: block;
+    max-width: 768px;
+  }
+  .top .main_content {
+    max-width: 768px;
+    margin-right: 0;
+  }
+  .top .main_content .pagination {
+    width: auto;
   }
 }/*# sourceMappingURL=base.css.map */

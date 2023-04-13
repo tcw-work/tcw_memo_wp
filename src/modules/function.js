@@ -1,7 +1,5 @@
 export default () => {
     console.log("function")
-
-
 }
 
 // headerパーツ
@@ -66,7 +64,7 @@ $(".sp_nav_torigger").click(function () {
 // スムーススクロール
 $(function () {
     $('a[href^="#"]').click(function () {
-        var adjust = 0;
+        var adjust = 1; // 本当は0だが、サイドバー目次のために1に設定
         var speed = 400;
         var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);

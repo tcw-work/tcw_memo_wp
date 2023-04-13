@@ -66,6 +66,7 @@
                 </div>
             </div>
         </section>
+
         <div class="article_content">
             <?php the_content(); ?>
         </div>

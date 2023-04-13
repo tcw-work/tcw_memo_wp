@@ -168,6 +168,10 @@ aside {
                         bottom: 0;
                     }
                 }
+                a {
+                    color: $c_base;
+                    text-decoration: none;
+                }
             }
             li.s_h2 {
                 margin-left: 30px;
@@ -205,45 +209,83 @@ aside {
                     }
                 }
             }
-            li.s_heading_active {
+            li a.s_heading_active {
                 color: $c_accent;
                 position: relative;
                 &::before {
                     content: "";
                     width: 10px;
                     height: 10px;
-                    // right: 272px;
                     position: absolute;
                     background-color: $c_accent;
                     border-radius: 10px;
+                    top: 50%;
+                    -webkit-transform: translate(0%, -50%);
+                    transform: translate(0%, -50%);
                 }
             }
-            li.s_h2.s_heading_active {
+            li.s_h2 a.s_heading_active {
                 &::before {
                     left: -34px;
+                    top: 50%;
+                    -webkit-transform: translate(0%, -50%);
+                    transform: translate(0%, -50%);
                 }
             }
-            li.s_h3.s_heading_active {
+            li.s_h2.autoid_1 a.s_heading_active {
+                &::before {
+                    top: 22%;
+                }
+            }
+            li.s_h3 a.s_heading_active {
                 &::before {
                     left: -42px;
                 }
             }
-            li.s_h4.s_heading_active {
+            li.s_h4 a.s_heading_active {
                 &::before {
                     left: -50px;
                 }
             }
-            li.s_h5.s_heading_active {
+            li.s_h5 a.s_heading_active {
                 &::before {
                     left: -58px;
                 }
             }
         }
     }
+    .heading.fixed {
+        position: fixed;
+        top: 44px;
+        max-width: 273px;
+    }
 }
 @media (max-width: 768px) {
     aside {
         max-width: 768px;
         margin-top: 40px;
+        // .heading.fixed {
+        //     width: 87%;
+        //     max-width: 100%;
+        //     left: 50%;
+        //     -webkit-transform: translate(-50%, 0%);
+        //     transform: translate(-50%, 0%);
+        // }
     }
+    // .n_btn {
+    //     position: fixed;
+    //     bottom: 56px;
+    //     right: 30px;
+    //     width: 70px;
+    //     height: 70px;
+    //     background-color: #eee;
+    //     border-radius: 100px;
+    //     p {
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         -webkit-transform: translate(-50%, -50%);
+    //         transform: translate(-50%, -50%);
+    //     }
+    // }
 }

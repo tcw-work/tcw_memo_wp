@@ -44,6 +44,7 @@ body header .h_ttl span {
 }
 body header .h_nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 body header .h_nav_inside .h_nav_hov {
   display: none;
