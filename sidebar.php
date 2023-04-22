@@ -76,27 +76,13 @@
 
 
 
-    <?php if ( is_single() or is_page() ) { // シングルページの場合 ?>
+    <?php if ( is_single() ) { // シングルページの場合 ?>
 
     <section class="heading">
         <div class="box_ttl box_common">
             <p>目次</p>
         </div>
         <div class="box_cont">
-            <!-- <ul>
-                <li class="s_h2">H2 タイトル</li>
-                <li class="s_h3">H3 タイトル</li>
-                <li class="s_h4">H4 タイトル</li>
-                <li class="s_h4">H4 タイトル</li>
-                <li class="s_h2 s_heading_active">H2 タイトル</li>
-                <li class="s_h3 s_heading_active">H3 タイトル</li>
-                <li class="s_h4 s_heading_active">H4 タイトル</li>
-                <li class="s_h5 s_heading_active">H5 タイトル</li>
-                <li class="s_h3">H3 タイトル</li>
-                <li class="s_h4">H4 タイトル</li>
-                <li class="s_h5">H5 タイトル</li>
-                <li class="s_h4">H4 タイトル</li>
-            </ul> -->
             <!--ここにサイドバー用目次を代入-->
             <ul class="mokuji"></ul>
             <!--ここにサイドバー用目次を代入-->
