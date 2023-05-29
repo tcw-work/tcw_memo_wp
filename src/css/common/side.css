@@ -102,6 +102,13 @@ aside section.social .box_ttl span {
   width: auto;
   height: auto;
   border-style: none;
+  overflow: hidden;
+}
+aside section.social .box_ttl span a {
+  float: left;
+}
+aside section.social .box_ttl span a:not(:first-child) {
+  margin-left: 16px;
 }
 aside section.social .box_cont,
 aside section.contact .box_cont,

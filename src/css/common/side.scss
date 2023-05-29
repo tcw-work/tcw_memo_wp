@@ -108,6 +108,13 @@ aside {
                 width: auto;
                 height: auto;
                 border-style: none;
+                overflow: hidden;
+                a {
+                    float: left;
+                    &:not(:first-child) {
+                        margin-left: 16px;
+                    }
+                }
             }
         }
     }
