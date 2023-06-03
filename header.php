@@ -11,6 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!--    favicon-->
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/src/img/common/favicon.gif" type="image/gif">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/src/img/common/favicon.gif" type="image/gif">
+    <!--    スマホ用アイコン画像-->
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/src/img/common/touch-icon.png">
+    <!--    電話番号やメールアドレスの変換設定防止タグ-->
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B8SHB1V7D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6B8SHB1V7D');
+    </script>
+
     <?php wp_head() ?>
     <?php wp_meta() ?>
 </head>
