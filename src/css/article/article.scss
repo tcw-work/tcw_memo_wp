@@ -3,6 +3,7 @@ body.article {
     main {
         padding-top: 134px;
         .main_content.m_c_article {
+            overflow: hidden;
             .article_heading {
                 padding-bottom: 40px;
                 border-bottom: 2px solid $c_base;
@@ -110,7 +111,7 @@ body.article {
                     }
                 }
                 ul {
-                    background-color: rgb(52, 52, 52, 0.1);
+                    background-color: rgba(52, 52, 52, 0.1);
                     padding: 24px;
                     margin-bottom: 24px;
                     li {
