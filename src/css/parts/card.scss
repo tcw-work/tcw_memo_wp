@@ -24,7 +24,7 @@ section.card_01 {
         height: 100%;
         margin: 0px 12px;
         a {
-            background-image: url(../../img/common/topic01.jpg);
+            background-image: url(../../img/common/topic00.jpg);
             background-size: cover;
             display: block;
             color: $c_main;
@@ -43,6 +43,18 @@ section.card_01 {
                 transition: 0.3s;
             }
         }
+        a.l_c01 {
+            background-image: url(../../img/common/topic01.jpg);
+        }
+        a.l_c02 {
+            background-image: url(../../img/common/topic02.jpg);
+        }
+        a.l_c03 {
+            background-image: url(../../img/common/topic03.jpg);
+        }
+        a.l_c04 {
+            background-image: url(../../img/common/topic04.jpg);
+        }
         dt {
             // font-size: 2.4rem;
             font-size: clamp(1.8rem, 2.0869vw, 2.4rem);
@@ -50,7 +62,7 @@ section.card_01 {
             padding: 30px 15px;
             position: absolute;
             top: 0px;
-            background-color: rgba(0, 0, 0, 0.11);
+            background-color: rgba(0, 0, 0, 0.2);
             width: 100%;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;

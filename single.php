@@ -33,7 +33,7 @@
                             <?php
                             $category = get_the_category();
                             if (!empty($category)) { ?>
-                            <?php
+                                <?php
                                 if (isset($category[0])) {
                                     echo '<li><a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->name . '</a><li>';
                                 } else {
@@ -81,8 +81,7 @@
                             <a class="card_link" href="javascript:void(0);">
                                 <div class="small_card_left">
                                     <object><a href="javascript:void(0);">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_psd.png"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_psd.png" alt="">
                                         </a>
                                     </object>
                                 </div>
@@ -118,8 +117,7 @@
                             <a class="card_link" href="javascript:void(0);">
                                 <div class="small_card_left">
                                     <object><a href="javascript:void(0);">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_js.png"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_js.png" alt="">
                                         </a>
                                     </object>
                                 </div>
@@ -155,8 +153,7 @@
                             <a class="card_link" href="javascript:void(0);">
                                 <div class="small_card_left">
                                     <object><a href="javascript:void(0);">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_html.png"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_html.png" alt="">
                                         </a>
                                     </object>
                                 </div>
@@ -197,28 +194,28 @@
     <div class="large_card">
         <h2>PIC UP</h2>
         <ul>
-            <li><a href="#">
+            <li><a class="l_c01" href="<?php echo get_template_directory_uri(); ?>/javascript/quick-event/">
                     <dl>
-                        <dt class="c-v_a_ttl">HTML・CSS</dt>
-                        <dd class="c-v_a_des">Bracketsエディターを使ってSCSSをCMD経由でコンパイルする方法を解説。</dd>
+                        <dt class="c-v_a_ttl">JavaScript</dt>
+                        <dd class="c-v_a_des">【JS】フォームに値がセットされた瞬間にイベントを発火させる方法</dd>
                     </dl>
                 </a></li>
-            <li><a href="#">
+            <li><a class="l_c02" href="<?php echo get_template_directory_uri(); ?>/javascript/pwa-application/">
                     <dl>
-                        <dt class="c-v_a_ttl">DESIGN</dt>
-                        <dd class="c-v_a_des">Bracketsエディターを使ってSCSSをCMD経由でコンパイルする方法を解説。Rubyをインストールすれば後は簡単！</dd>
+                        <dt class="c-v_a_ttl">HTML</dt>
+                        <dd class="c-v_a_des">【実践】PWAを使ってサイトをアプリ化する方法</dd>
                     </dl>
                 </a></li>
-            <li><a href="#">
+            <li><a class="l_c03" href="<?php echo get_template_directory_uri(); ?>/php/php-login/">
                     <dl>
-                        <dt class="c-v_a_ttl">Word Press</dt>
-                        <dd class="c-v_a_des">Bracketsエディターを使ってSCSSをCMD経由でコンパイルする方法を解説。</dd>
+                        <dt class="c-v_a_ttl">PHP</dt>
+                        <dd class="c-v_a_des">【PHP】ログイン機能＋メール送信機能をゼロから自作してみた</dd>
                     </dl>
                 </a></li>
-            <li><a href="#">
+            <li><a class="l_c04" href="<?php echo get_template_directory_uri(); ?>/html/tranceform-center/">
                     <dl>
-                        <dt class="c-v_a_ttl">New Article</dt>
-                        <dd class="c-v_a_des">Bracketsエディターを使ってSCSSをCMD経由でコンパイルする方法を解説。</dd>
+                        <dt class="c-v_a_ttl">CSS</dt>
+                        <dd class="c-v_a_des">Positionで指定した要素を中央寄せで固定する方法</dd>
                     </dl>
                 </a></li>
         </ul>

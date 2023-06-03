@@ -30,7 +30,7 @@ section.card_01 {
 }
 
 .large_card li a {
-  background-image: url(../../img/common/topic01.jpg);
+  background-image: url(../../img/common/topic00.jpg);
   background-size: cover;
   display: block;
   color: #ffffff;
@@ -52,13 +52,29 @@ section.card_01 {
   transition: 0.3s;
 }
 
+.large_card li a.l_c01 {
+  background-image: url(../../img/common/topic01.jpg);
+}
+
+.large_card li a.l_c02 {
+  background-image: url(../../img/common/topic02.jpg);
+}
+
+.large_card li a.l_c03 {
+  background-image: url(../../img/common/topic03.jpg);
+}
+
+.large_card li a.l_c04 {
+  background-image: url(../../img/common/topic04.jpg);
+}
+
 .large_card li dt {
   font-size: clamp(1.8rem, 2.0869vw, 2.4rem);
   font-weight: bold;
   padding: 30px 15px;
   position: absolute;
   top: 0px;
-  background-color: rgba(0, 0, 0, 0.11);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -10,7 +10,7 @@
     </div>
 </footer>
 
-<script src="https://t-creative-works.com/js/jquery-3.5.0.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.5.0.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/dist/main.js"></script>
 <?php wp_footer(); ?>
 </body>
