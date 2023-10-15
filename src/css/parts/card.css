@@ -6,21 +6,15 @@ section.card_01 {
 .large_card {
   margin-bottom: 96px;
 }
-
 .large_card ul {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-
 .large_card li {
   max-width: 282px;
   width: 100%;
@@ -28,7 +22,6 @@ section.card_01 {
   height: 100%;
   margin: 0px 12px;
 }
-
 .large_card li a {
   background-image: url(../../img/common/topic00.jpg);
   background-size: cover;
@@ -36,38 +29,27 @@ section.card_01 {
   color: #ffffff;
   padding-top: 600px;
   position: relative;
-  -webkit-transform: translateY(0px);
   transform: translateY(0px);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-shadow: 0px 0px 13px 3px rgba(17, 17, 26, 0.18);
-          box-shadow: 0px 0px 13px 3px rgba(17, 17, 26, 0.18);
+  box-shadow: 0px 0px 13px 3px rgba(17, 17, 26, 0.18);
 }
-
 .large_card li a:hover {
   cursor: pointer;
-  -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .large_card li a.l_c01 {
   background-image: url(../../img/common/topic01.jpg);
 }
-
 .large_card li a.l_c02 {
   background-image: url(../../img/common/topic02.jpg);
 }
-
 .large_card li a.l_c03 {
   background-image: url(../../img/common/topic03.jpg);
 }
-
 .large_card li a.l_c04 {
   background-image: url(../../img/common/topic04.jpg);
 }
-
 .large_card li dt {
   font-size: clamp(1.8rem, 2.0869vw, 2.4rem);
   font-weight: bold;
@@ -76,10 +58,8 @@ section.card_01 {
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .large_card li dd {
   font-size: clamp(1.6rem, 1.739vw, 2rem);
   padding: 32px 15px;
@@ -88,11 +68,9 @@ section.card_01 {
   background-color: rgba(0, 0, 0, 0.38);
   line-height: 1.6;
 }
-
 .large_card li:first-child {
   margin-left: 0;
 }
-
 .large_card li:last-child {
   margin-right: 0;
 }
@@ -102,72 +80,51 @@ section.card_01 {
   width: 100%;
   margin-bottom: 32px;
   font-weight: bold;
-  -webkit-box-shadow: 0px 3px 6px #00000029;
-          box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   color: #343434;
 }
-
 .small_card:hover a {
   color: #ffffff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .small_card:hover a.card_link {
-  background: #418875;
-  background: -webkit-gradient(linear, left top, right top, from(#418875), to(#0d4739));
-  background: linear-gradient(90deg, #418875 0%, #0d4739 100%);
+  background: rgb(65, 136, 117);
+  background: linear-gradient(90deg, rgb(65, 136, 117) 0%, rgb(13, 71, 57) 100%);
 }
-
 .small_card a {
   text-decoration: none;
   color: #343434;
 }
-
 .small_card a.card_link {
   padding: 24px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .small_card:not(:last-child) {
   margin-bottom: 32px;
 }
-
 .small_card .small_card_left {
   margin-right: 32px;
 }
-
 .small_card .small_card_left img {
   width: 92px;
 }
-
 .small_card .small_card_right .top ul {
   margin-bottom: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
-
 .small_card .small_card_right .top li {
   font-size: 1.4rem;
   line-height: 1.6;
 }
-
 .small_card .small_card_right .top li:not(:first-child) {
   margin-right: 8px;
 }
-
 .small_card .small_card_right .top li.date {
   margin-right: 24px;
 }
-
 .small_card .small_card_right .bottom p {
   font-size: 1.8rem;
   line-height: 1.6;
@@ -181,7 +138,6 @@ section.card_01 {
     padding-top: 47vw;
   }
 }
-
 @media screen and (max-width: 768px) {
   .top .main_content h2 {
     font-size: 2.8rem;
@@ -197,9 +153,7 @@ section.card_01 {
   .large_card ul {
     width: 950px;
     padding: 0px 0px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .large_card li {
     max-height: 360px;
@@ -231,18 +185,13 @@ section.card_01 {
     font-size: 18px;
   }
   .small_card .small_card_right .top ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
-
 @media screen and (max-width: 500px) {
   .small_card .small_card_right .top li.date {
     width: 100%;
     margin-right: 0px;
   }
-}
-/*# sourceMappingURL=card.css.map */
+}/*# sourceMappingURL=card.css.map */

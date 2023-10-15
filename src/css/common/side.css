@@ -2,7 +2,6 @@ aside {
   max-width: 306px;
   width: 100%;
 }
-
 aside section {
   background-color: #343434;
   border: 2px solid #343434;
@@ -10,95 +9,67 @@ aside section {
   font-size: 1.6rem;
   font-weight: bold;
 }
-
 aside section:not(:last-child) {
   margin-bottom: 24px;
 }
-
 aside section .box_ttl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 12px;
   cursor: pointer;
 }
-
 aside section .box_ttl span {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 11px 18px 11px;
   border-color: transparent transparent #048e67 transparent;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
-
 aside section .box_ttl span.triangle_act {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   display: block;
 }
-
 aside section .box_cont {
   border-top: 2px solid #048e67;
   padding: 12px;
 }
-
 aside section .box_cont img {
   width: 100%;
 }
-
 aside section .box_cont li {
   line-height: 1.6;
   margin-bottom: 12px;
   font-size: 1.4rem;
 }
-
 aside section.window {
   background-color: #ffffff;
   color: #343434;
 }
-
 aside section.window .box_ttl {
   padding: 0px;
   cursor: auto;
 }
-
 aside section.window .box_ttl form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
-
 aside section.window .box_ttl label {
   width: 100%;
 }
-
 aside section.window .box_ttl label input {
   padding: 12px;
   width: 100%;
   outline: 0;
   border: none;
 }
-
 aside section.window .box_ttl label input :focus {
   outline: 0;
   border: none;
 }
-
 aside section.window .box_ttl .search-submit {
   margin: 0px;
   padding: 11px;
@@ -110,61 +81,49 @@ aside section.window .box_ttl .search-submit {
   border-style: none;
   position: relative;
 }
-
 aside section.category .box_cont,
 aside .tag .box_cont {
   display: none;
 }
-
 aside section.category .box_cont li a,
 aside .tag .box_cont li a {
   color: #ffffff;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 aside section.category .box_cont li a:hover,
 aside .tag .box_cont li a:hover {
   color: #048e67;
 }
-
 aside section.social .box_cont {
   background-color: #ffffff;
 }
-
 aside section.social .box_ttl span {
   width: auto;
   height: auto;
   border-style: none;
   overflow: hidden;
 }
-
 aside section.social .box_ttl span a {
   float: left;
 }
-
 aside section.social .box_ttl span a:not(:first-child) {
   margin-left: 16px;
 }
-
 aside section.social .box_cont,
 aside section.contact .box_cont,
 aside section.heading .box_cont {
   background-color: #ffffff;
   border-top: none;
 }
-
 aside section.social .box_ttl,
 aside section.contact .box_ttl,
 aside section.heading .box_ttl {
   cursor: auto;
 }
-
 aside section.heading .box_cont ul {
   position: relative;
 }
-
 aside section.heading .box_cont ul::before {
   content: "";
   width: 2px;
@@ -173,23 +132,18 @@ aside section.heading .box_cont ul::before {
   display: block;
   background-color: #343434;
 }
-
 aside section.heading .box_cont li {
   font-size: 14px;
   cursor: pointer;
   color: #343434;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 aside section.heading .box_cont li:hover {
   color: #048e67;
 }
-
 aside section.heading .box_cont li:first-child, aside section.heading .box_cont li:last-child {
   position: relative;
 }
-
 aside section.heading .box_cont li:first-child::before, aside section.heading .box_cont li:last-child::before {
   content: "";
   width: 10px;
@@ -198,61 +152,47 @@ aside section.heading .box_cont li:first-child::before, aside section.heading .b
   background-color: #343434;
   border-radius: 10px;
 }
-
 aside section.heading .box_cont li:first-child::before {
   top: 0;
 }
-
 aside section.heading .box_cont li:last-child {
   margin-bottom: 0;
 }
-
 aside section.heading .box_cont li:last-child::before {
   bottom: 0;
 }
-
 aside section.heading .box_cont li a {
   color: #343434;
   text-decoration: none;
 }
-
 aside section.heading .box_cont li.s_h2 {
   margin-left: 30px;
 }
-
 aside section.heading .box_cont li.s_h2:first-child::before, aside section.heading .box_cont li.s_h2:last-child::before {
   left: -34px;
 }
-
 aside section.heading .box_cont li.s_h3 {
   margin-left: 38px;
 }
-
 aside section.heading .box_cont li.s_h3:first-child::before, aside section.heading .box_cont li.s_h3:last-child::before {
   left: -42px;
 }
-
 aside section.heading .box_cont li.s_h4 {
   margin-left: 46px;
 }
-
 aside section.heading .box_cont li.s_h4:first-child::before, aside section.heading .box_cont li.s_h4:last-child::before {
   left: -50px;
 }
-
 aside section.heading .box_cont li.s_h5 {
   margin-left: 54px;
 }
-
 aside section.heading .box_cont li.s_h5:first-child::before, aside section.heading .box_cont li.s_h5:last-child::before {
   left: -58px;
 }
-
 aside section.heading .box_cont li a.s_heading_active {
   color: #048e67;
   position: relative;
 }
-
 aside section.heading .box_cont li a.s_heading_active::before {
   content: "";
   width: 10px;
@@ -261,33 +201,25 @@ aside section.heading .box_cont li a.s_heading_active::before {
   background-color: #048e67;
   border-radius: 10px;
   top: 50%;
-  -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-
 aside section.heading .box_cont li.s_h2 a.s_heading_active::before {
   left: -34px;
   top: 50%;
-  -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-
 aside section.heading .box_cont li.s_h2.autoid_1 a.s_heading_active::before {
   top: 22%;
 }
-
 aside section.heading .box_cont li.s_h3 a.s_heading_active::before {
   left: -42px;
 }
-
 aside section.heading .box_cont li.s_h4 a.s_heading_active::before {
   left: -50px;
 }
-
 aside section.heading .box_cont li.s_h5 a.s_heading_active::before {
   left: -58px;
 }
-
 aside .heading.fixed {
   position: fixed;
   top: 44px;
@@ -299,5 +231,4 @@ aside .heading.fixed {
     max-width: 768px;
     margin-top: 40px;
   }
-}
-/*# sourceMappingURL=side.css.map */
+}/*# sourceMappingURL=side.css.map */

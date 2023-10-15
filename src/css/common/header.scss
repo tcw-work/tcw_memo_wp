@@ -40,12 +40,32 @@ body {
         .h_ttl {
             margin-right: 24px;
             display: block;
+            color: $c_main;
+            transition: all 0.2s ease;
             text-decoration: none;
-            span {
-                color: $c_main;
+            // text-decoration: none;
+            // background: linear-gradient(to right, #ffffff 50%, #a7d5c9 50%, #048e67);
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // background-size: 200%;
+            // background-position: 0%;
+            // transition: background-position 400ms ease;
+            &:hover {
+                // background-position: -100%;
+                color: #048e67;
+            }
+            .ver {
                 display: block;
-                margin-top: 12px;
-                font-size: 1.8rem;
+                font-size: 16px;
+                margin-top: 8px;
+                margin-left: 4px;
+                font-size: 1.6rem;
+                font-weight: bold;
+                line-height: 1;
+
+                // max-width: 113px;
+                // width: 100%;
             }
         }
         .h_nav {

@@ -36,48 +36,49 @@
             <?php if (have_posts()) :
                 while (have_posts()) :
                     the_post(); ?>
-                    <article class="card_02">
-                        <div class="small_card">
-                            <a class="card_link" href="<?php the_permalink(); ?>">
-                                <div class="small_card_left">
-                                    <object>
-                                        <a href="<?php the_permalink(); ?>" itemprop="url">
-                                            <?php
+            <article class="card_02">
+                <div class="small_card">
+                    <a class="card_link" href="<?php the_permalink(); ?>">
+                        <div class="small_card_left">
+                            <object>
+                                <a href="<?php the_permalink(); ?>" itemprop="url">
+                                    <?php
                                             // アイキャッチ画像が設定されているかチェック
                                             if (has_post_thumbnail()) {
                                                 // アイキャッチ画像を表示する
                                                 the_post_thumbnail();
                                             } else { ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_html.png" alt="">
-                                            <?php } ?>
-                                        </a>
-                                    </object>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_html.png"
+                                        alt="">
+                                    <?php } ?>
+                                </a>
+                            </object>
 
-                                </div>
-                                <div class="small_card_right">
-                                    <div class="top">
-                                        <ul>
-                                            <li class="date">
-                                                <?php the_time('Y-m-d'); ?>
-                                            </li>
-                                            <!-- 親カテゴリー-->
-                                            <?php
+                        </div>
+                        <div class="small_card_right">
+                            <div class="top">
+                                <ul>
+                                    <li class="date">
+                                        <?php the_time('Y-m-d'); ?>
+                                    </li>
+                                    <!-- 親カテゴリー-->
+                                    <?php
                                             $category = get_the_category();
                                             if (!empty($category)) { ?>
-                                                <?php
+                                    <?php
                                                 if (isset($category[0])) {
                                                     echo '<li class="l_cat"><object><a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->name . '</a></object><li>';
                                                 }
                                                 ?>
-                                            <?php } ?>
-                                            <!-- 子カテゴリー-->
-                                            <?php
+                                    <?php } ?>
+                                    <!-- 子カテゴリー-->
+                                    <?php
                                             if (isset($category[1])) {
                                                 echo '<li class="s_cat"><object><a href="' . get_category_link($category[1]->term_id) . '">' . $category[1]->name . '</a></object><li>';
                                             }
                                             ?>
 
-                                            <?php
+                                    <?php
                                             $posttags = get_the_tags();
                                             if ($posttags) {
                                                 foreach ($posttags as $tag) {
@@ -85,19 +86,19 @@
                                                 }
                                             }
                                             ?>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <p>
-                                            <object>
-                                                <?php the_title(); ?>
-                                            </object>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    <object>
+                                        <?php the_title(); ?>
+                                    </object>
+                                </p>
+                            </div>
                         </div>
-                    </article>
+                    </a>
+                </div>
+            </article>
             <?php endwhile;
             endif; ?>
             <?php

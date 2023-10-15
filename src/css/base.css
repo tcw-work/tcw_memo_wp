@@ -9,7 +9,6 @@ html {
     margin-top: 0px !important;
   }
 }
-
 .is_pc {
   display: block;
 }
@@ -23,20 +22,17 @@ html {
   width: 100%;
   margin-right: 32px;
 }
-
 .top .main_content h2 {
   margin-bottom: 40px;
   font-size: 2.8rem;
   line-height: 1;
   font-weight: bold;
   display: inline-block;
-  background: transparent -webkit-gradient(linear, left top, right top, from(#048e67), color-stop(19%, #343434)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #048e67 0%, #343434 19%) 0% 0% no-repeat padding-box;
   color: transparent;
   -webkit-background-clip: text;
   width: 100%;
 }
-
 .top .main_content h2::after {
   content: "";
   display: block;
@@ -46,51 +42,36 @@ html {
   margin-top: 8px;
   background-color: #343434;
 }
-
 .top .main_content .pagination h2 {
   width: auto;
 }
-
 .top .main_content .pagination .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .top .main_content .pagination a:not(:last-child) {
   margin-right: 12px;
 }
-
 .top .main_content .pagination span,
 .top .main_content .pagination a {
   width: 24px;
   height: 24px;
   font-size: 1.4rem;
   border-radius: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
-
 .top .main_content .pagination span {
   margin-right: 12px;
   background-color: #343434;
   color: #ffffff;
 }
-
 .top .main_content .pagination a {
   background-color: #ffffff;
   color: #343434;
   border: 1px solid #343434;
 }
-
 .top .main_content .pagination .next,
 .top .main_content .pagination .prev {
   display: none;
@@ -101,14 +82,9 @@ main {
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -129,5 +105,4 @@ main {
   .top .main_content .pagination {
     width: auto;
   }
-}
-/*# sourceMappingURL=base.css.map */
+}/*# sourceMappingURL=base.css.map */

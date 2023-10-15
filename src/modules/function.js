@@ -79,5 +79,5 @@ $(function () {
 // 検索窓のinputを画像に変更
 $(".search-submit").attr("value", "");
 $(".search-submit").attr("type", "image");
-$(".search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search.png");
-$("header .search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search_black.jpg");
+$(".search-submit").attr("src", "/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search.png");
+$("header .search-submit").attr("src", "/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search_black.jpg");
