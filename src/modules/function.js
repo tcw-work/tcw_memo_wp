@@ -79,11 +79,14 @@ $(function () {
 // 検索窓のinputを画像に変更
 $(".search-submit").attr("value", "");
 $(".search-submit").attr("type", "image");
+
+// 現在のURLを取得
+var currentUrl = window.location.href;
 // 本番環境のURLに含まれる部分をチェック
 if (currentUrl.includes("http://localhost")) {
     // ローカル環境の場合
     $(".search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search.png");
-    $("header .search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search_black.jpg");
+$("header .search-submit").attr("src", "http://localhost/wp_tcw/wp-content/themes/tcw_memo/src/img/common/search_black.jpg")
 } else {
     // 本番環境の場合
     $(".search-submit").attr("src", "https://t-creative-works.com/wp-content/themes/tcw_memo/src/img/common/search.png");
