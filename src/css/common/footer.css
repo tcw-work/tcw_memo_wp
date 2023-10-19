@@ -41,6 +41,17 @@ footer .f_inner li a:hover {
 footer .f_inner .f_copy {
   text-align: center;
 }
+footer .f_inner .f_version {
+  justify-content: center;
+}
+footer .f_inner .f_version li::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  display: block;
+  background-color: none;
+  margin-left: 0px;
+}
 
 @media (max-width: 768px) {
   footer {

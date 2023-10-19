@@ -41,6 +41,19 @@ footer {
         .f_copy {
             text-align: center;
         }
+        .f_version {
+            justify-content: center;
+            li {
+                &::after {
+                    content: "";
+                    width: 0px;
+                    height: 0px;
+                    display: block;
+                    background-color: none;
+                    margin-left: 0px;
+                }
+            }
+        }
     }
 }
 @media (max-width: 768px) {
