@@ -103,6 +103,8 @@ aside section.social .box_ttl span {
   height: auto;
   border-style: none;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 aside section.social .box_ttl span a {
   float: left;
@@ -219,6 +221,9 @@ aside section.heading .box_cont li.s_h4 a.s_heading_active::before {
 }
 aside section.heading .box_cont li.s_h5 a.s_heading_active::before {
   left: -58px;
+}
+aside section.social {
+  border: none;
 }
 aside .heading.fixed {
   position: fixed;

@@ -109,6 +109,8 @@ aside {
                 height: auto;
                 border-style: none;
                 overflow: hidden;
+                display: flex;
+                align-items: center;
                 a {
                     float: left;
                     &:not(:first-child) {
@@ -260,6 +262,9 @@ aside {
                 }
             }
         }
+    }
+    section.social {
+        border: none;
     }
     .heading.fixed {
         position: fixed;
