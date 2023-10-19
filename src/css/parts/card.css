@@ -109,6 +109,7 @@ section.card_01 {
 }
 .small_card .small_card_left img {
   width: 92px;
+  height: 92px;
 }
 .small_card .small_card_right .top ul {
   margin-bottom: 12px;

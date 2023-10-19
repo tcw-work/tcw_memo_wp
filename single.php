@@ -33,7 +33,7 @@
                             <?php
                             $category = get_the_category();
                             if (!empty($category)) { ?>
-                                <?php
+                            <?php
                                 if (isset($category[0])) {
                                     echo '<li><a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->name . '</a><li>';
                                 } else {
@@ -74,14 +74,18 @@
             <h2>関連記事</h2>
             <?php include(TEMPLATEPATH . '/related-entries.php'); ?>
 
-            <div class="article_scroll">
-                <div class="article_scroll_in">
-                    <article class="card_02">
+
+
+            <!-- <div class="article_scroll">
+                <div class="article_scroll_in"> -->
+            <?php include(TEMPLATEPATH . '/related-entries_tag.php'); ?>
+            <!-- <article class="card_02">
                         <div class="small_card">
                             <a class="card_link" href="javascript:void(0);">
                                 <div class="small_card_left">
                                     <object><a href="javascript:void(0);">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_psd.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_psd.png"
+                                                alt="">
                                         </a>
                                     </object>
                                 </div>
@@ -117,7 +121,8 @@
                             <a class="card_link" href="javascript:void(0);">
                                 <div class="small_card_left">
                                     <object><a href="javascript:void(0);">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_js.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_js.png"
+                                                alt="">
                                         </a>
                                     </object>
                                 </div>
@@ -153,7 +158,8 @@
                             <a class="card_link" href="javascript:void(0);">
                                 <div class="small_card_left">
                                     <object><a href="javascript:void(0);">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_html.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/a_icon_html.png"
+                                                alt="">
                                         </a>
                                     </object>
                                 </div>
@@ -183,9 +189,9 @@
                                 </div>
                             </a>
                         </div>
-                    </article>
-                </div>
-            </div>
+                    </article> -->
+            <!-- </div>
+            </div> -->
         </section>
     </div>
     <?php get_sidebar(); ?>
