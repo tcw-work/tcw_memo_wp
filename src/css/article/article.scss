@@ -157,6 +157,26 @@ body.article {
                     }
                 }
             }
+            .social_block_bottom {
+                border-top: 2px solid #343434;
+                padding-top: 24px;
+                ul {
+                    padding: 0;
+                    // margin-top: 32px;
+                    margin-bottom: 24px;
+                    display: flex;
+                    background-color: #ffffff;
+                    li {
+                        color: #048e67;
+                        font-weight: bold;
+                        margin: 0;
+                        &:not(:last-child) {
+                            margin-right: 12px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
             .related_block {
                 margin-top: 80px;
                 .article_scroll {

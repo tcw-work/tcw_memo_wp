@@ -5,9 +5,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php if (is_home() || is_front_page()) { ?>
-    <title>TCW</title>
-    <meta name="description" content="TCW 技術ブログ">
+    <title>TCW 技術ブログ</title>
+    <meta name="description" content="[仕事募集中]web制作に関する技術ブログです。">
     <?php } ?>
+
+    <!-- ここからOGPの設定 -->
+    <?php
+        // タイトルの取得
+        $ogp_title = get_the_title();
+        if (is_home() || is_front_page()) {
+            $ogp_title = get_bloginfo('name');
+        }
+
+        // 共通のOGP画像URL
+        $ogp_image = get_template_directory_uri() . '/src/img/common/ogp.jpg';
+
+        // ページが投稿または固定ページの場合、アイキャッチ画像を取得
+        // if (is_singular() && has_post_thumbnail()) {
+        //     $thumbnail_id = get_post_thumbnail_id();
+        //     $ogp_image = wp_get_attachment_image_src($thumbnail_id, 'full')[0];
+        // }
+    ?>
+    <!-- OGPの基本設定 -->
+    <!-- Facebook用の設定 -->
+    <!-- <meta property="fb:app_id" content="Your-Facebook-App-ID"> -->
+    <!-- Twitter用の設定 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
+
+    <meta property="og:title" content="<?php echo esc_attr($ogp_title); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php echo esc_url($ogp_image); ?>">
+    <meta property="og:site_name" content="TCW 技術ブログ">
+    <meta property="og:locale" content="ja_JP">
+    <?php if (is_home() || is_front_page()) { ?>
+    <meta property="og:description" content="web制作に関する技術ブログです。">
+    <meta property="og:url" content="<?php echo esc_url(home_url('/')); ?>">
+    <?php } else { ?>
+    <meta property="og:description" content="<?php echo esc_attr(get_the_excerpt()); ?>">
+    <meta property="og:url" content="<?php echo esc_url(get_permalink()); ?>">
+    <?php } ?>
+
+    <!-- ここまでOGPの設定 -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&amp;display=swap"
