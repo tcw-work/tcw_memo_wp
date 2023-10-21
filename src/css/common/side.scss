@@ -148,11 +148,6 @@ aside {
                 font-size: 14px;
                 cursor: pointer;
                 color: $c_base;
-                -webkit-transition: all 0.2s ease;
-                transition: all 0.2s ease;
-                &:hover {
-                    color: $c_accent;
-                }
                 &:first-child,
                 &:last-child {
                     position: relative;
@@ -180,6 +175,11 @@ aside {
                 a {
                     color: $c_base;
                     text-decoration: none;
+                    -webkit-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        color: $c_accent;
+                    }
                 }
             }
             li.s_h2 {
@@ -266,10 +266,26 @@ aside {
     section.social {
         border: none;
     }
+    section.information {
+    }
     .heading.fixed {
         position: fixed;
         top: 44px;
         max-width: 273px;
+    }
+}
+aside {
+    section {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    section.heading {
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 @media (max-width: 768px) {

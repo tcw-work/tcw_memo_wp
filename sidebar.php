@@ -89,7 +89,18 @@
 
             </span>
         </div>
-        <div class="box_cont"></div>
+    </section>
+    <section class="information">
+        <div class="box_ttl box_common">
+            <p>
+                Information
+            </p>
+        </div>
+        <div class="box_cont ">
+            <a href="https://corporate.t-creative-works.com/works/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/anken.png" alt="案件募集中">
+            </a>
+        </div>
     </section>
     <!-- <section class="contact">
         <div class="box_ttl box_common">

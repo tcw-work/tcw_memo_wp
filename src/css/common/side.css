@@ -138,10 +138,6 @@ aside section.heading .box_cont li {
   font-size: 14px;
   cursor: pointer;
   color: #343434;
-  transition: all 0.2s ease;
-}
-aside section.heading .box_cont li:hover {
-  color: #048e67;
 }
 aside section.heading .box_cont li:first-child, aside section.heading .box_cont li:last-child {
   position: relative;
@@ -166,6 +162,10 @@ aside section.heading .box_cont li:last-child::before {
 aside section.heading .box_cont li a {
   color: #343434;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+aside section.heading .box_cont li a:hover {
+  color: #048e67;
 }
 aside section.heading .box_cont li.s_h2 {
   margin-left: 30px;
@@ -229,6 +229,16 @@ aside .heading.fixed {
   position: fixed;
   top: 44px;
   max-width: 273px;
+}
+
+aside section {
+  transition: all 0.2s ease;
+}
+aside section:hover {
+  opacity: 0.8;
+}
+aside section.heading:hover {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
