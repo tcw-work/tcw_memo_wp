@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="article_detail">
+                <div class="article_detail article_detail_s">
                     <div class="social">
                         <ul>
                             <li>

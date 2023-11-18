@@ -30,19 +30,30 @@ body.article main .main_content.m_c_article .article_detail {
   margin-left: 105px;
   font-weight: bold;
   display: flex;
+  flex-wrap: wrap;
 }
 body.article main .main_content.m_c_article .article_detail .date {
   margin-right: 12px;
   padding-right: 12px;
   border-right: 1px solid #343434;
+  margin-bottom: 12px;
+  height: -moz-max-content;
+  height: max-content;
 }
 body.article main .main_content.m_c_article .article_detail .cat {
   margin-right: 12px;
-  padding-right: 12px;
+  margin-bottom: 12px;
   border-right: 1px solid #343434;
+}
+body.article main .main_content.m_c_article .article_detail .tag {
+  margin-bottom: 8px;
+}
+body.article main .main_content.m_c_article .article_detail .tag li {
+  margin-bottom: 12px;
 }
 body.article main .main_content.m_c_article .article_detail ul {
   display: flex;
+  flex-wrap: wrap;
 }
 body.article main .main_content.m_c_article .article_detail li:not(:last-child) {
   margin-right: 12px;
@@ -55,6 +66,9 @@ body.article main .main_content.m_c_article .article_detail a {
 body.article main .main_content.m_c_article .article_detail a:hover {
   text-decoration: none;
   color: #048e67;
+}
+body.article main .main_content.m_c_article .article_detail_s {
+  margin-top: 0px;
 }
 body.article main .main_content.m_c_article .article_content {
   padding: 40px 24px 16px 24px;

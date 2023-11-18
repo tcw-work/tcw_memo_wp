@@ -32,20 +32,28 @@ body.article {
                 margin-left: 105px;
                 font-weight: bold;
                 display: flex;
+                flex-wrap: wrap;
                 .date {
                     margin-right: 12px;
                     padding-right: 12px;
                     border-right: 1px solid $c_base;
+                    margin-bottom: 12px;
+                    height: max-content;
                 }
                 .cat {
                     margin-right: 12px;
-                    padding-right: 12px;
-                    border-right: 1px solid $c_base;
+                    margin-bottom: 12px;
+                    border-right: 1px solid #343434;
                 }
                 .tag {
+                    margin-bottom: 8px;
+                    li {
+                        margin-bottom: 12px;
+                    }
                 }
                 ul {
                     display: flex;
+                    flex-wrap: wrap;
                 }
                 li {
                     &:not(:last-child) {
@@ -62,6 +70,9 @@ body.article {
                         color: $c_accent;
                     }
                 }
+            }
+            .article_detail_s {
+                margin-top: 0px;
             }
             .article_content {
                 padding: 40px 24px 16px 24px;

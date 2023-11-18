@@ -7,7 +7,7 @@
             <li><a href="#">Portfolio</a></li>
         </ul>
         <ul class="f_version">
-            <li><a href="#">Ver2.2.5</a></li>
+            <li><a href="#">Ver2.2.6</a></li>
         </ul>
         <div class="f_copy">copyright @tomizawa-creative-works</div>
     </div>
