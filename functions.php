@@ -153,6 +153,16 @@ function insert_table_of_contents( $the_content ){
 
             // カスタムカラムファイルをインクルードする
             include_once get_template_directory() . '/custom-columns.php';
+            //カスタムIDの検索窓追加
+            include_once get_template_directory() . '/custom-window.php';
+
+
+
+            function my_admin_scripts() {
+            wp_enqueue_script('my-custom-search', get_template_directory_uri() . '/custom-search.js', array('jquery'),
+            null, true);
+            }
+            add_action('admin_enqueue_scripts', 'my_admin_scripts');
 
 
             ?>
