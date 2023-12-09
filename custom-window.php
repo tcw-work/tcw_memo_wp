@@ -2,7 +2,7 @@
 // カスタム検索窓を追加
 add_action('admin_head', function() {
     $screen = get_current_screen();
-    if ($screen->id != 'edit-post') { // 'post'は投稿タイプに応じて変更
+    if ($screen->id != 'edit-post') { // 'post'は投稿タイプに応じて変更（edit-storeとかもあり得る）
         return;
     }
 

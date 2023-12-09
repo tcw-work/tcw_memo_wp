@@ -58,3 +58,8 @@ function custom_id_column_orderby($query) {
 }
 //つまり既存のインスタンス情報の中身を->getで取得し、->setで変更を加えて、pre_get_postsに追加要素として渡す（カスタムid情報を付け加える）ということ
 add_action('pre_get_posts', 'custom_id_column_orderby');
+
+
+
+
+//※※※通常の記事投稿ではなく、カスタム投稿タイプ（edit.php?post_type=store のようなURL）の場合は各フックを「add_action(manage_store（カスタムタイプ）_posts_columns...」 のように改造すること
