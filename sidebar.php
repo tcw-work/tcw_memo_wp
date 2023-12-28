@@ -90,7 +90,7 @@
             </span>
         </div>
     </section>
-    <section class="information">
+    <!-- <section class="information">
         <div class="box_ttl box_common">
             <p>
                 Information
@@ -101,7 +101,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/src/img/common/anken.png" alt="案件募集中">
             </a>
         </div>
-    </section>
+    </section> -->
     <!-- <section class="contact">
         <div class="box_ttl box_common">
             <p>Contact</p>
