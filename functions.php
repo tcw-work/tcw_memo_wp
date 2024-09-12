@@ -106,61 +106,46 @@ add_action('widgets_init', 'my_widget_init');
 
 
 function insert_table_of_contents( $the_content ){
-	if(is_single()) {  //投稿ページの場合
-		$tag = '/^<h[2-6].*?>(.+?)<\ /h[2-6]>$/im'; //見出しタグの検索パターン
-    if(preg_match_all($tag, $the_content, $tags)) { //本文中に見出しタグが含まれていれば
-    $idpattern = '/id *\= *["\'](.+?)["\']/i'; //見出しタグにidが定義されているか検索するパターン
-    $table_of_contents = '<div class="table_of_contents">
-        <p class="title">Table of Contents</p>
-        <ul>';
-            $idnum = 1;
-            $nest = 0;
+	if (is_single()) {  // 投稿ページの場合
+		// 見出しタグの検索パターン
+		$tag = '/<h[2-6].*?>(.+?)<\/h[2-6]>/im'; // 見出しタグの検索パターン
 
-            for($i = 0 ; $i < count($tags[0]) ; $i++){ if( ! preg_match_all($idpattern, $tags[0][$i], $idstr) ){
-                //見出しタグにidが定義されていない場合、「autoid_1」のようなidを自動設定 $idstr[1][0]='autoid_' .$idnum++;
-                $the_content=preg_replace( "/" .str_replace('/', '\/' ,$tags[0][$i])."/",
-                preg_replace('/(^<h[2-6])/i', '${1} id="' . $idstr[1][0] . '" ' , $tags[0][$i]), $the_content,1); }
-                //見出しへのリンクを目次に追加。<li>でリスト形式に。
-                $table_of_contents .= '<li><a href="#' . $idstr[1][0] . '">' . $tags[1][$i] .'</a>';
-                    }
+		if (preg_match_all($tag, $the_content, $tags)) { // 本文中に見出しタグが含まれていれば
+			$idpattern = '/id *= *["\'](.+?)["\']/i'; // 見出しタグにidが定義されているか検索するパターン
+			$table_of_contents = '<div class="table_of_contents">
+            <p class="title">Table of Contents</p>
+            <ul>';
+			$idnum = 1;
+			$nest = 0;
 
-                    $table_of_contents .= '</ul>
-    </div>'; //目次の各タグを閉じる
+			for ($i = 0; $i < count($tags[0]); $i++) {
+				if (!preg_match($idpattern, $tags[0][$i], $idstr)) {
+					// 見出しタグにidが定義されていない場合、「autoid_1」のようなidを自動設定
+					$idstr[1] = 'autoid_' . $idnum++;
+					$the_content = preg_replace(
+						'/' . preg_quote($tags[0][$i], '/') . '/',  // エスケープ処理
+						preg_replace('/(^<h[2-6])/i', '${1} id="' . $idstr[1] . '"', $tags[0][$i]), 
+						$the_content,
+						1
+					);
+				}
+				// 見出しへのリンクを目次に追加。<li>でリスト形式に。
+				$table_of_contents .= '<li><a href="#' . $idstr[1] . '">' . $tags[1][$i] . '</a></li>';
+			}
 
-    if($tags[0][0]){
-    //作った目次を、1番目の見出しタグの直前に追加
-    $the_content = preg_replace('/(^<h[2-6].*?>.+?<\ /h[2-6]>$)/im', $table_of_contents.'${1}', $the_content,1);
-            }
-            }
-            }
-            return $the_content;
-            }
+			$table_of_contents .= '</ul></div>'; // 目次の各タグを閉じる
 
-            // 記事表示時に「insert_table_of_contents()」を実行する
-            add_filter('the_content','insert_table_of_contents');
+			if ($tags[0][0]) {
+				// 作った目次を、1番目の見出しタグの直前に追加
+				$the_content = preg_replace('/(<h[2-6].*?>.+?<\/h[2-6]>)/im', $table_of_contents . '${1}', $the_content, 1);
+			}
+		}
+	}
+	return $the_content;
+}
 
-            //ショートコード
-            function and_mark()
-            {
-            return "&amp;";
-            }
-            add_shortcode('and_mark', 'and_mark');
-
-            // function percente()
-            // {
-            // return "&#037;";
-            // }
-
-            // カスタムカラムファイルをインクルードする
-            include_once get_template_directory() . '/custom-columns.php';
-            //カスタムIDの検索窓機能追加
-            include_once get_template_directory() . '/custom-window.php';
-            //カスタムIDの検索窓フロント部分追加
-            function my_admin_scripts() {
-            wp_enqueue_script('my-custom-search', get_template_directory_uri() . '/custom-search.js', array('jquery'),
-            null, true);
-            }
-            add_action('admin_enqueue_scripts', 'my_admin_scripts');
+// 記事表示時に「insert_table_of_contents()」を実行する
+add_filter('the_content', 'insert_table_of_contents');
 
 
             ?>
