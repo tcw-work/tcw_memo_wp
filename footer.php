@@ -2,14 +2,14 @@
     <div class="f_inner">
         <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="javascript:void(0)">プライバシーポリシー</a></li>
             <li><a href="https://corporate.t-creative-works.com/contact/" target="_blank">お問い合わせ</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="https://corporate.t-creative-works.com/works/">Portfolio</a></li>
         </ul>
         <ul class="f_version">
-            <li><a href="#">Ver2.3.7</a></li>
+            <li><a href="#">Ver2.3.8</a></li>
         </ul>
-        <div class="f_copy">copyright @tomizawa-creative-works</div>
+        <div class="f_copy">copyright @t-creative-works</div>
     </div>
 </footer>
 

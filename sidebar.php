@@ -58,7 +58,7 @@
     <section class="social">
         <div class="box_ttl box_common">
             <p>Social</p><span>
-                <a href="javascript:void(0)">
+                <a href="https://x.com/zawa_ab" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
                         height="25px">
                         <image x="0px" y="0px" width="25px" height="25px"
