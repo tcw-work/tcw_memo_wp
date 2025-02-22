@@ -150,7 +150,7 @@
 
                         <div class="h_nav">
                             <ul>
-                                <li><a href="<?php echo esc_url(get_term_link('html-css', 'category')); ?>">HTML・CSS</a>
+                                <li><a href="<?php echo esc_url(get_term_link('html', 'category')); ?>">HTML・CSS</a>
                                 </li>
                                 <li><a
                                         href="<?php echo esc_url(get_term_link('javascript', 'category')); ?>">JavaScript</a>
