@@ -14,10 +14,10 @@
                         <dd class="c-v_a_des">【実践】PWAを使ってサイトをアプリ化する方法</dd>
                     </dl>
                 </a></li>
-            <li><a class="l_c03" href="<?php echo get_template_directory_uri(); ?>/php/php-login/">
+            <li><a class="l_c03" href="<?php echo get_template_directory_uri(); ?>/php/laravel-command-list/">
                     <dl>
                         <dt class="c-v_a_ttl">PHP</dt>
-                        <dd class="c-v_a_des">【PHP】ログイン機能＋メール送信機能をゼロから自作してみた</dd>
+                        <dd class="c-v_a_des">Laravelの基本コマンド一覧メモ（随時更新）</dd>
                     </dl>
                 </a></li>
             <li><a class="l_c04" href="<?php echo get_template_directory_uri(); ?>/html/tranceform-center/">
