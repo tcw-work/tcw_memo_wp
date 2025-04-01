@@ -2,30 +2,34 @@
 <section class="card_01">
     <div class="large_card">
         <ul>
-            <li><a class="l_c01" href="<?php echo get_template_directory_uri(); ?>/javascript/quick-event/">
-                    <dl>
-                        <dt class="c-v_a_ttl">JavaScript</dt>
-                        <dd class="c-v_a_des">【JS】フォームに値がセットされた瞬間にイベントを発火させる方法</dd>
-                    </dl>
-                </a></li>
-            <li><a class="l_c02" href="<?php echo get_template_directory_uri(); ?>/javascript/pwa-application/">
-                    <dl>
-                        <dt class="c-v_a_ttl">HTML</dt>
-                        <dd class="c-v_a_des">【実践】PWAを使ってサイトをアプリ化する方法</dd>
-                    </dl>
-                </a></li>
             <li><a class="l_c03" href="<?php echo get_template_directory_uri(); ?>/php/laravel-command-list/">
                     <dl>
                         <dt class="c-v_a_ttl">PHP</dt>
                         <dd class="c-v_a_des">Laravelの基本コマンド一覧メモ（随時更新）</dd>
                     </dl>
-                </a></li>
+                </a>
+            </li>
+            <li><a class="l_c01" href="<?php echo get_template_directory_uri(); ?>/javascript/quick-event/">
+                    <dl>
+                        <dt class="c-v_a_ttl">JavaScript</dt>
+                        <dd class="c-v_a_des">【JS】フォームに値がセットされた瞬間にイベントを発火させる方法</dd>
+                    </dl>
+                </a>
+            </li>
+            <li><a class="l_c02" href="<?php echo get_template_directory_uri(); ?>/javascript/pwa-application/">
+                    <dl>
+                        <dt class="c-v_a_ttl">HTML</dt>
+                        <dd class="c-v_a_des">【実践】PWAを使ってサイトをアプリ化する方法</dd>
+                    </dl>
+                </a>
+            </li>
             <li><a class="l_c04" href="<?php echo get_template_directory_uri(); ?>/html/tranceform-center/">
                     <dl>
                         <dt class="c-v_a_ttl">CSS</dt>
                         <dd class="c-v_a_des">Positionで指定した要素を中央寄せで固定する方法</dd>
                     </dl>
-                </a></li>
+                </a>
+            </li>
         </ul>
     </div>
 </section>

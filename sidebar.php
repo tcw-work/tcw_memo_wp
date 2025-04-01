@@ -58,13 +58,13 @@
     <section class="social">
         <div class="box_ttl box_common">
             <p>Social</p><span>
-                <a href="https://x.com/zawa_ab" target="_blank">
+                <!-- <a href="" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
                         height="25px">
                         <image x="0px" y="0px" width="25px" height="25px"
                             xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnChURMy7fu58uAAACA0lEQVQ4y32TS0jUURSHPzVTIprIBwVhYZQZ5aJWSSIRBrVRatGqB/QgqIiWgSVBURS2C4TQFtkiWkhtCheFClFGmmFShKk4GT6C8hW++lroODP/mTxnc/+/c777v/eec1KIt9WUUcZ21rOCKQbo4iUvGOQ/lsFFvmCC91NFKBmwjeYk6RH/QHEQKCa8BCAySnkssJWBFLMMucYsMxPS080xRSYoid6hBVOtcdhOe+wyLw7Its2bpop8JWceuTAfKvC3VRbZYWMMkGGTbwxFvqsBVtEdCZ+0x5Vudsbzi8hDv5kb3eIXeXA49hDPfCqec9pCEa85urBa9EtQGyusc8hT4nPfisedcV/wMRqhNV464pj55vrDRw55IvGx+6A/KNb7WixX7yarzwSMBMU19npZrLM1SY2Yhe+JOx30rzvNtM87icgfaEtEapzyvWmWOOPeYDQM9UHghsPu8aP3xFv2Rss4701wLB447ZSlYrGzHhDbvR+PVEI2A1Fhv3MeXVhfd8iQhU5aHgUmKQC4GhF2OO6VmP5t94l4xr5oy9TNt2WIT4ibDPsg7hBFTlvpbgdsMF1kkA3RARtN9baPXW7wZh022+I7d8kch2KHrIKxZUtOZdocZ4OjXMrnJZBw/B8ilkM1P5Okj1PLxmhaSgDLp4IytrCWDKYYoZtXNNAZm/IPHZ8wcWrJefEAAAAASUVORK5CYII=" />
                     </svg>
-                </a>
+                </a> -->
                 <a href="https://github.com/tcw-work" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
                         height="25" viewBox="0 0 96 96">

@@ -7,7 +7,7 @@
             <li><a href="https://corporate.t-creative-works.com/works/">Portfolio</a></li>
         </ul>
         <ul class="f_version">
-            <li><a href="#">Ver2.3.9</a></li>
+            <li><a href="#">Ver2.3.10</a></li>
         </ul>
         <div class="f_copy">copyright @t-creative-works</div>
     </div>
